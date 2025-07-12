@@ -1,0 +1,156 @@
+
+[
+
+    {
+        "name":"Stefan Tarnovanu",
+        "image":"Stefan_Tarnovanu.jpg",
+        "type":"transfer"
+    },
+
+    {
+        "name":"Mihai Udrea",
+        "image":"udrea.jpg",
+        "type":"transfer"
+    },
+    
+    {
+        "name":"Lukas Zima",
+        "image":"zima.jpg",
+        "type":"transfer"
+    },
+
+    {
+        "name":"Ngezana",
+        "image":"Ngezana.jpg",
+        "type":"transfer"
+    },
+
+    {
+        "name":"Joyskim Dawa",
+        "image":"dawa.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Vlad Chiriches",
+        "image":"chiri.jpg",
+        "type":"transfer"
+    },
+
+    {
+        "name":"Daniel Graovac",
+        "image":"graovac.jpg",
+        "type":"transfer"
+    },
+
+    {
+        "name":"Siyabonga Ngezana",
+        "image":"Ngezana.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Alexandru Pantea",
+        "image":"pantea.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Risto Radunovic",
+        "image":"risto.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Laurentiu Vlasceanuu",
+        "image":"vlasceanu.jpeg",
+        "type":"transfer"
+    },
+    {
+        "name":"Baba Alhassan",
+        "image":"baba.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Baluta Alexandru",
+        "image":"baluta.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Cercel Ionut",
+        "image":"cercel.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Malcom Edjouma",
+        "image":"edjouma.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Gheorghita Andrei",
+        "image":"gheorghita.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Octavian Popescu",
+        "image":"tavi.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Lixandru Mihai",
+        "image":"lix.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Adrian Sut",
+        "image":"sut.jpg",
+        "type":"transfer"
+    },
+
+        {
+        "name":"Florin Tanase",
+        "image":"Florin_Tanase.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Denis Alibec",
+        "image":"alibec.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Cisotti Juri",
+        "image":"juri.png",
+        "type":"transfer"
+    },
+
+    {
+        "name":"Darius Olaru",
+        "image":"Darius_Olaru.jpg",
+        "type":"transfer"
+    },
+
+    {
+        "name":"Politic Denis",
+        "image":"politic.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Miculescu David",
+        "image":"micugol.png",
+        "type":"transfer"
+    },
+    {
+        "name":"Toma Mihai",
+        "image":"toma.jpg",
+        "type":"transfer"
+    },
+    {
+        "name":"Stefanescu Marius",
+        "image":"stefanescu.jpg",
+        "type":"transfer"
+    },
+
+
+    {
+        "name":"Daniel Birligea",
+        "image":"Daniel_Birligea.jpg",
+        "type":"transfer"
+    }
+
+]
