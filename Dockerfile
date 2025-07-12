@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expunem portul pe care Flask îl va folosi
-EXPOSE 10000
+EXPOSE 5000
 
 # Comanda de start
 CMD ["python", "app.py"]
