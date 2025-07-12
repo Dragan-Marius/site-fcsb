@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>ParkAuto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #8986e5;
+            }
+        .navbar{
+            background-color: #8986e5;
+        }
+        .navbar .navbar .nav-link, .navbar-brand{
+            color: #000000;
+            font-weight: 500;
+        }
+        .navbar .nav-link:hover {
+            color: #fdfdfd;
+        }
+        .btn-primary{
+            background-color: #000000;
+            border-color: #000000;
+        }
+        .btn-primary:hover{
+            background-color: #e70909;
+            border-color:  #ed6a6a ;
+        }
+        .card{
+            scroll-padding-block-start: 10px;
+            border: none;
+            box-shadow: 0 3px 10px rgba(220, 220, 220, 0.1);
+        }
+
+        .footer {
+            font-size: 0.7 rem;
+            background-color: #d32f2f;
+            color: #ffffff;
+        }
+        .card-img top {
+             height: 190px;
+             object-fit: cover;
+        }
+        .card-text{
+            font-size: 0.9rem;
+        }
+        .card .card-body {
+            background-color: #ffffff;
+            padding: 0.75rem;
+        }
+        .card .btn {
+            border-radius:  18px;
+            margin-top: auto;
+        }
+        .product-title {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light shadow">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">ParkAuto</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Acasa</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('cart') }}">Cos
+                     {% if cart_item_count > 0 %}
+                        ({{ cart_item_count }})
+                    {% endif %}
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main class="container my-4">
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <footer class="text-white text-center p-3 mt-4" style="background-color: #d32f2f;">
+        <p>&copy; 2025 ParkAuto. Drepturi rezervate</p>
+    </footer>
+</body>
+</html>

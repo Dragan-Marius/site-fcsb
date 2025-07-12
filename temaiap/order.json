@@ -1,0 +1,56 @@
+[
+    {
+        "full_name": "Marius Dragan",
+        "email": "draganmarius420@yahoo.com",
+        "phone": "0751332078",
+        "address": "George Co\u0219buc",
+        "payment_method": "card",
+        "items": [
+            {
+                "id": 4,
+                "name": "Filtru de Particule",
+                "price": 1499,
+                "image": "filtrudeparticule1499.jpg",
+                "qty": 1,
+                "subtotal": 1499
+            }
+        ],
+        "total": 1499
+    },
+    {
+        "full_name": "Marius Dragan",
+        "email": "draganmarius420@yahoo.com",
+        "phone": "0751332078",
+        "address": "George Co\u0219buc",
+        "payment_method": "card",
+        "items": [
+            {
+                "id": 3,
+                "name": "Filtru de Aer",
+                "price": 89,
+                "image": "filtrudeaer89.jpg",
+                "qty": 1,
+                "subtotal": 89
+            }
+        ],
+        "total": 89
+    },
+    {
+        "full_name": "Marius Dr\u0103gan",
+        "email": "mariusdragan1144@gmail.com",
+        "phone": "0751332078",
+        "address": "George Co\u0219buc",
+        "payment_method": "card",
+        "items": [
+            {
+                "id": 2,
+                "name": "Disc De Ambreiaj",
+                "price": 145,
+                "image": "discdeambreiaj.jpg",
+                "qty": 1,
+                "subtotal": 145
+            }
+        ],
+        "total": 145
+    }
+]

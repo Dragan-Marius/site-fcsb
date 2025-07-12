@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <title>Steaua Bucuresti</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <header class="top-bar">
+            <img src="{{ url_for('static', filename='images/FCSB.jpg') }}" alt="FCSB" class="logo"> 
+            <div class="moto">
+                <span style="color: #0066a5;">TRUP SI SUFLET</span>
+                <br>
+                <span style="color: #e93903;">PENTRU CULORI!</span>
+            </div>
+            <!--
+            <div class="sponsori-logo">
+               <img src="{{ url_for('static', filename='images/BETANO.jpg') }}" alt="BETANO" class="sponsori-logo">
+                <img src="{{ url_for('static', filename='images/NIKE.jpg') }}" alt="NIKE" class="sponsori-logo">
+            </div>
+         -->
+
+            <div class="comenzi">
+                <a href="/login">INREGISTRARE/LOGARE</a>
+                <a href="/cos">COȘ</a>
+            </div>
+        </header>
+        <nav class="nav-menu">
+            <img src="{{ url_for('static', filename='images/FCSB.jpg') }}" alt="FCSB" class="logo">
+            <a href="#">ACASĂ</a>
+            <a href="/stiri">ȘTIRI</a>
+            <a href="/presa">PRESA</a>
+            <a href="/istoric">ISTORIC</a>
+            <a href="/stadion">STADION</a>
+            <a href="/echipa">ECHIPA</a>
+            <a href="/academie">ACADEMIE</a>
+            <a href="/fcsbtv">FCSB TV</a>
+            <a href="/media">MEDIA</a>
+            <a href="/shop">SHOP</a>
+            <a href="/marketing">MARKETING</a>
+            <a href="/bilete">BILETE</a>
+            <a href="/abonamente">ABONAMENTE</a>
+        </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <script>
+        function scrollPlayers(direction) {
+            const container = document.getElementById('players-scroll');
+            const scrollAmount = 300;
+
+            container.scrollBy({
+                left: direction * scrollAmount, 
+                behavior:"smooth"
+            });
+        }
+        window.onload =  function() {
+            const container = document.getElementById('players-scroll');
+            container.scrollLeft = (container.scrollWidth-container.clientWidth)/2
+        }
+    </script> 
+
+    </body>
+</html>

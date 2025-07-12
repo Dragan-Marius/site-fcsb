@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+
+<h2 class="my-4 fw-bold">Cosul tau</h2>
+
+{% if items %}
+<table class="table table-bordered aligned">
+    <thead>
+        <tr>
+            <th class="text-center">Produs</th>
+            <th class="text-center">Cantitate</th>
+            <th class="text-center">Pret unitar</th>
+            <th class="text-center">Subtotal</th>
+            <th class="text-center">Cantitate±</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{item.name}}</td>
+            <td class="text-center">
+                <span class="badge bg-light text-dark px-3 py-2">{{item.qty}}</span>
+            </td>
+            <td class="text-center">{{item.price}}Lei</td>
+            <td class="text-center">{{item.subtotal}}Lei</td>
+            <td class="text-center">
+                <a href="{{ url_for('decrease_qty', product_id=item.id) }}" class="btn btn-outline-secondary btn-sm">-</a>
+                <a href="{{ url_for('increase_qty', product_id=item.id) }}" class="btn btn-outline-secondary btn-sm">+</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-end"><strong>Total:</strong></td>
+            <td colspan="2"><strong>{{ total }} Lei</strong></td>
+        </tr>
+    </tfoot>
+</table>
+
+<h4>Total: {{ total }} Lei</h4>
+
+<a href="{{  url_for('checkout') }}" class="btn btn-primary mt-3"> Finalizare comanda</a>
+<a href="{{ url_for('index') }}" class="btn btn-primary mt-3">Continua cumparaturile</a>
+{% else %}
+<p>Cosul este gol</p>
+{% endif %}
+{% endblock %}
+<!---de adaugat buton eliminare totala din cos-->

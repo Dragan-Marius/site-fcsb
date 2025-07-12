@@ -1,0 +1,66 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/echipa.jpg') }}" alt="echipa">
+        </div>
+        <div class="hero-info">
+            <div class="titlu">
+            <img src="{{ url_for('static', filename='images/FCSB.jpg') }}" alt="FCSB" class="logo-team">
+            <h1>Steaua Bucuresti-Inter D'Escaldes</h1>
+            <img src="{{ url_for('static', filename='images/INTER.jpg') }}" alt="INTER" class="logo-team">
+            
+            </div>
+        <p>Inceput in competitiile europene pentru campioana Romaniei</p>
+        </div>
+    </div>
+</section>
+<section class="transferuri-noi">
+    <p style="font-size: 65px; font-family: Georgia, 'Times New Roman', Times, serif;">Transferuri noi</p>
+    <div class="transferuri-scroll">
+            {% for transfer in transfers %}
+                <div class="transferuri-card">
+                    <img src="{{ url_for('static', filename='images/' + transfer.image) }}" alt="{{ transfer.name}}">
+                    <p class="player-anunt"> {{ transfer.name }} VA JUCA LA STEAUA BUCURESTI!</p>
+                    <p class="player-info"> {{ transfer.info }}</p>
+
+                </div>
+            {% endfor %}
+        </div>
+
+</section>
+
+<section class="lot">
+    <h2>LOT 2025-2026</h2>
+    <div class="slider-container">
+        <button class="slider-btn left" onclick="scrollPlayers(-1)">-</button>
+        
+        <div class="players-scroll" id="players-scroll">
+            {% for player in players %}
+                <div class="player-card">
+                    <img src="{{ url_for('static', filename='images/' + player.image) }}" alt="{{ player.name}}">
+                    <p>{{ player.name }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <button class="slider-btn right" onclick="scrollPlayers(+1)">+</button>
+    </div>
+</section>
+
+<section class="newsletter-footer">
+    <div class="footer-content">
+        <h2>ABONEAZA-TE LA NEWSLETTER-UL<br>FCSB</h2>
+        <form>
+            <input type="email" placeholder="Adresa de e-mail">
+            <button type="submit">ABONEAZA-TE</button>
+        </form>
+        <div class="spacer"></div>
+        <p>&copy; 2025-2026 Steaua Bucuresti.Toate drepturile sunt rezervate</p>
+    </div>
+    <img src="{{ url_for('static', filename='images/FCSB.jpg') }}" alt="FCSB" class="footer-logo">
+
+</section>
+{% endblock %}

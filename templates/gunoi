@@ -1,0 +1,70 @@
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-image">
+             <div class="blur-bg"></div>
+            <img src="{{ url_for('static', filename='images/echipa.jpg') }}" alt="echipa">
+        </div>
+        <div class="hero-info">
+            <div class="titlu">
+            <img src="{{ url_for('static', filename='images/FCSB.jpg') }}" alt="FCSB" class="logo">
+            <h1>Steaua Bucuresti-Inter D'Escaldes</h1>
+            <img src="{{ url_for('static', filename='images/INTER.jpg') }}" alt="INTER" class="logo">
+            
+            </div>
+        <p>Inceput in competitiile europene pentru campioana Romaniei</p>
+        </div>
+    </div>
+</section>
+
+
+.hero {
+    background: linear-gradient(to bottom right, #000c43, #390020);
+    padding: 50px 0; 
+    color: white;
+}
+
+.hero-container {
+    width: 100%;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-image img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin: 0; 
+    box-shadow: 0 0 30px rgba(0,0,0.6);
+}
+
+.hero-info {
+    flex: 1;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hero-info p {
+    font-size: 1.9rem;
+    color: gray;
+    line-height: 1.5;
+    text-align: center;
+}
+.logo {
+    height: 70px;
+    width: auto;
+}
+.titlu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+
+}
+    <footer>
+        <p>&copy; 2025-2026 Steaua Bucuresti.Toate drepturile sunt rezervate</p>
+    </footer>
